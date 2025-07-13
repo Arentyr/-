@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Питомник "Королевская Тень" - Кане Корсо</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f8f8;
+      color: #222;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px #000;
+      user-select: none;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 3px solid #ffd700;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .dogs-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .dog-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+      width: calc(33.33% - 13.33px);
+      overflow: hidden;
+      user-select: none;
+      transition: transform 0.3s;
+    }
+    .dog-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgb(0 0 0 / 0.3);
+    }
+    .dog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .dog-card .info {
+      padding: 15px;
+    }
+    .dog-card .info h3 {
+      margin: 0 0 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .dog-card .info p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    button {
+      background-color: #ffd700;
+      border: none;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #e6c200;
+    }
+    @media(max-width: 768px) {
+      .dog-card {
+        width: calc(50% - 10px);
+      }
+    }
+    @media(max-width: 480px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .dog-card {
+        width: 100%;
+      }
+      .hero {
+        font-size: 1.7rem;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Питомник "Королевская Тень"</header>
+  <nav>
+    <a href="#about">О питомнике</a>
+    <a href="#dogs">Наши собаки</a>
+    <a href="#services">Услуги</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <div class="hero">Кане Корсо — сила и грация в одном</div>
+  <main>
+    <section id="about">
+      <h2>О питомнике</h2>
+      <p>Питомник "Королевская Тень" специализируется на разведении породистых собак кане корсо с безупречной родословной и отменным здоровьем. Мы заботимся о каждом щенке с первых дней жизни, вкладывая душу и опыт.</p>
+    </section>
+    <section id="dogs">
+      <h2>Наши собаки</h2>
+      <div class="dogs-gallery">
+        <div class="dog-card">
+          <img src="https://cdn2.thedogapi.com/images/B1svZgqE7.jpg" alt="Кане Корсо 1" />
+          <div class="info">
+            <h3>Ричард</h3>
+            <p>Возраст: 3 года<br>Отец — чемпион, мать — красавица с отличным характером</p>
+          </div>
+        </div>
+        <div class="dog-card">
+          <img src="https://cdn2.thedogapi.com/images/BkE6Wg5E7.jpg" alt="Кане Корсо 2" />
+          <div class="info">
+            <h3>Нова</h3>
+            <p>Возраст: 2 года<br>Умная и послушная девочка, наша гордость</p>
+          </div>
+        </div>
+        <div class="dog-card">
+          <img src="https://cdn2.thedogapi.com/images/Hyq1ge5E7.jpg" alt="Кане Корсо 3" />
+          <div class="info">
+            <h3>Босс</h3>
+            <p>Возраст: 4 года<br>Сильный и надёжный друг семьи</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Услуги</h2>
+      <ul>
+        <li>Продажа щенков с родословной</li>
+        <li>Организация вязки с лучшими производителями</li>
+        <li>Консультации по уходу и воспитанию</li>
+      </ul>
+    </section>
+    <section id="reviews">
+      <h2>Отзывы клиентов</h2>
+      <blockquote>«Купили щенка в "Королевской Тени", собака — настоящее сокровище! Спасибо за профессионализм и заботу.» — Ольга П.</blockquote>
+      <blockquote>«Отличный питомник, все на высшем уровне. Рекомендую всем любителям кане корсо!» — Дмитрий К.</blockquote>
+    </section>
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Телефон: +7 (999) 123-45-67</p>
+      <p>Email: info@korolevskaya-ten.ru</p>
+      <p>Адрес: г. Москва, ул. Пушкина, д. 10</p>
+      <form>
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="email" name="email" placeholder="Ваш email" required />
+        <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Питомник "Королевская Тень". Все права защищены.
+  </footer>
+</body>
+</html>
